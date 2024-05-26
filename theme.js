@@ -13,10 +13,6 @@ const styles = {
         props.theme.semanticTokens.colors["chakra-body-bg"]._dark,
         "blackAlpha.800"
       )(props),
-      // color: mode (
-      //   props.theme.semanticTokens.colors["chakra-body-bg"]._light,
-      //   "gray.800"
-      // )(props),
     },
   }),
 };
