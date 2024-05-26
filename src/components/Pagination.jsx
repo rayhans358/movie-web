@@ -5,7 +5,7 @@ import { ChevronLeft, ChevronRight } from "react-feather";
 const Pagination = ({ activePage, totalPages, setActivePage }) => {
   return (
     <Flex gap={"5"} alignItems={"center"}>
-      <Flex gap={"1"}>
+      <Flex gap={"1"} color={"white"}>
         <Text>Page</Text>
         <Text>{activePage}</Text>
         <Text>of</Text>

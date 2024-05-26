@@ -33,6 +33,7 @@ const Watchlist = () => {
         <Heading
           as="h2"
           fontSize={"md"}
+          color={"white"}
           textTransform={"uppercase"}
           borderLeft={"5px solid #e50914"}
           paddingLeft={"10px"}
@@ -49,7 +50,7 @@ const Watchlist = () => {
 
       {!loadingWatchlist && watchlist?.length === 0 && (
         <Flex justify={"center"} my={"10"}>
-          <Heading as="h2" fontSize={"md"}>
+          <Heading as="h2" fontSize={"md"} color={"white"}>
             Your watchlist is empty
           </Heading>
         </Flex>

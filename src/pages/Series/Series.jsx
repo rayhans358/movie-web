@@ -37,6 +37,7 @@ const Series = () => {
         <Heading
           as="h2"
           fontSize={"md"}
+          color={"white"}
           textTransform={"uppercase"}
           borderLeft={"5px solid #e50914"}
           paddingLeft={"10px"}
@@ -47,6 +48,7 @@ const Series = () => {
         <Select
           w={"130px"}
           border={"1px solid teal"}
+          color={"white"}
           onChange={(e) => {
             setActivePage(1)
             setSortBy(e.target.value)

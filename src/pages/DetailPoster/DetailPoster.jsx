@@ -122,7 +122,7 @@ const DetailPoster = () => {
     : new Date(details?.release_date).toLocaleDateString("id-ID", { day: 'numeric', month: 'long', year: 'numeric' });
 
   return (
-    <Box>
+    <Box color={"white"}>
       <Box
         background={`linear-gradient(rgba(0,0,0,.88), rgba(0,0,0,.88)), url(${getImagePathOriginal()}/${details?.backdrop_path})`}
         backgroundRepeat={"no-repeat"}

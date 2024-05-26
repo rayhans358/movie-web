@@ -21,7 +21,7 @@ const CardWatchlist = ({ type, item, setWatchlist }) => {
   };
   return (
     <Link to={`/${type}/${item.id}`}>
-      <Flex gap={"4"}>
+      <Flex gap={"4"} color={"white"}>
         <Box position={"relative"} w={"150px"}>
           <Image
             borderRadius={"15px"}

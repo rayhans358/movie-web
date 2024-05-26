@@ -42,7 +42,13 @@ const Search = () => {
   return (
     <Container maxW={"container.xl"}>
       <Flex alignItems={"baseline"} gap={"5"} my={"10"}>
-        <Heading as="h2" fontSize={"24px"} borderLeft={"5px solid #e50914"} paddingLeft={"10px"}>
+        <Heading
+          as="h2"
+          fontSize={"24px"}
+          borderLeft={"5px solid #e50914"}
+          paddingLeft={"10px"}
+          color={"white"}
+        >
           Results Found: {searchResultsFound}
         </Heading>
       </Flex>
@@ -51,6 +57,7 @@ const Search = () => {
         <InputGroup>
           <Input
             placeholder="Search Movie or TV Series"
+            color={"white"}
             _placeholder={{ color: "gray" }}
             value={tempSearchValue}
             onChange={(e) => setTempSearchValue(e.target.value)}
@@ -76,7 +83,7 @@ const Search = () => {
       )}
 
       {searchData?.length === 0 && !loadingSearch && (
-        <Heading textAlign={"center"} as={"h3"} fontSize={"md"} mt={"10"}>
+        <Heading textAlign={"center"} as={"h3"} fontSize={"md"} mt={"10"} color={"white"}>
           {searchResultsFound
             ? `Maaf, saat ini Film atau Serial TV ${searchResultsFound} sedang tidak tersedia`
             : "Please enter keywords first"

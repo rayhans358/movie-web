@@ -30,6 +30,7 @@ const Navbar = () => {
           <Flex
             gap="10"
             alignItems={"center"}
+            color={"white"}
             justifyContent={"center"}
             fontSize={"20px"}
             display={{ base: "none", md: "flex" }}
@@ -100,6 +101,7 @@ const Navbar = () => {
                   display={"flex"}
                   gap={"2"}
                   alignItems={"center"}
+                  color={"white"}
                   _hover={{
                     color: "red"
                   }}
@@ -107,7 +109,7 @@ const Navbar = () => {
                   <Search size={"26px"} />
                 </Box>
               </Link>
-              <Box _hover={{ color: "red", cursor: "pointer" }}>
+              <Box color={"white"} _hover={{ color: "red", cursor: "pointer" }}>
                 <Bell size={"26px"} />
               </Box>
               <Box display={{ base: "none", md: "flex" }}>
@@ -159,19 +161,19 @@ const Navbar = () => {
               <Drawer isOpen={isOpen} placement='right' onClose={onClose}>
                 <DrawerOverlay />
                 <DrawerContent bg={"black"}>
-                  <DrawerCloseButton />
+                  <DrawerCloseButton color={"white"} />
                   <DrawerHeader>
                     {user ? (
                       <Flex alignItems={"center"} gap={"2"}>
                         <Avatar bg={"#F56565"} size={"sm"} name={user?.email} />
-                        <Box fontSize={"sm"}>
+                        <Box fontSize={"sm"} color={"white"}>
                           {user?.displayName || user?.email}
                         </Box>
                       </Flex>
                     ) : (
                       <Flex alignItems={"center"} gap={"4"} onClick={handleGoogleLogin}>
                         <Avatar size={"sm"} bg={"#2D3748"} as={"button"} />
-                        <Box fontSize={"sm"} display={"flex"} gap={"2"}>
+                        <Box fontSize={"sm"} display={"flex"} gap={"2"} color={"white"}>
                           <LogIn size={"26px"} /> Login
                         </Box>
                       </Flex>
@@ -179,7 +181,7 @@ const Navbar = () => {
                   </DrawerHeader>
 
                   <DrawerBody>
-                    <Flex flexDirection={"column"} gap={"4"} onClick={onClose} >
+                    <Flex flexDirection={"column"} gap={"4"} onClick={onClose} color={"white"}>
                       <Link to="/">Home</Link>
                       <Link to="/movies">Movies</Link>
                       <Link to="/shows">TV Shows</Link>

@@ -49,6 +49,7 @@ const Home = () => {
       <Flex alignItems={"baseline"} gap={"5"} my={"10"}>
         <Heading
           as="h2"
+          color={"white"}
           fontSize={"md"}
           textTransform={"uppercase"}
           borderLeft={"5px solid #e50914"}
@@ -60,6 +61,7 @@ const Home = () => {
         <Select
           w={"130px"}
           border={"1px solid teal"}
+          color={"white"}
           sx={{
             option: {
               backgroundColor: "#2D3748",
@@ -82,8 +84,8 @@ const Home = () => {
         >
           <Box
             as="button"
-            px="3"
-            py="1"
+            px="3" py="1"
+            color={"white"}
             borderTopLeftRadius="20px"
             borderBottomLeftRadius="20px"
             borderTopRightRadius={timeWindow === "day" ? "" : "20px"}
@@ -96,6 +98,7 @@ const Home = () => {
           <Box
             as="button"
             px="3" py="1"
+            color={"white"}
             borderTopRightRadius="20px"
             borderBottomRightRadius="20px"
             borderTopLeftRadius={timeWindow === "week" ? "" : "20px"}
