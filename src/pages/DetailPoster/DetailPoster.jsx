@@ -107,8 +107,9 @@ const DetailPoster = () => {
 
   if (loading) {
     return (
-      <Flex justify={"center"}>
+      <Flex justify={"center"} display={"flex"} flexDirection={"column"} gap={"5px"} alignItems={"center"}>
         <Spinner size={"xl"} color="red" />
+        <Text color="white" size={"xxl"}>Loading Detail Film</Text>
       </Flex>
     )
   }

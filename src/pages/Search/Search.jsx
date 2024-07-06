@@ -85,7 +85,7 @@ const Search = () => {
       {searchData?.length === 0 && !loadingSearch && (
         <Heading textAlign={"center"} as={"h3"} fontSize={"md"} mt={"10"} color={"white"}>
           {searchResultsFound
-            ? `Maaf, saat ini Film atau Serial TV ${searchResultsFound} sedang tidak tersedia`
+            ? `Sorry, at this time the Movie or TV Series ${searchResultsFound} is not available`
             : "Please enter keywords first"
           }
         </Heading>

@@ -12,7 +12,6 @@ const Navbar = () => {
   const handleGoogleLogin = async () => {
     try {
       await signInWithGoogle();
-      console.log("success");
 
     } catch (error) {
       console.error("Error google login:", error);

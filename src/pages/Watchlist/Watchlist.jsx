@@ -15,7 +15,6 @@ const Watchlist = () => {
       getWatchlist(user?.uid)
         .then((data) => {
           setWatchlist(data);
-          console.log(data, 'data watchlist');
         })
         .catch((error) => {
           console.error("Error get watchlist:", error);
